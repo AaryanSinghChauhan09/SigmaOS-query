@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-query Component Wiki
+# SigmaOS-query Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-query provides Package metadata query engine with name, description, and dependency search for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-query provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-query Abstraction
-- Fail-Fast on SigmaOS-query Initialization Errors
-- Deterministic SigmaOS-query Setup
-- Clear Abstraction Over SigmaOS-query APIs
-- Composition over Inheritance for SigmaOS-query extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-query Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-query Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-query Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-query APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-query extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-query follows a SigmaOS-query pattern:
+SigmaOS-query follows a SigmaOS-query pattern:
 - **SigmaOS-query Core**: Provides SigmaOS-query support, SigmaOS-query management, and SigmaOS-query tracking
 - **Management**: Supports SigmaOS-query management, SigmaOS-query configuration, and SigmaOS-query lifecycle
 - **Tracking**: Supports SigmaOS-query status, SigmaOS-query tracking, and SigmaOS-query lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-query follows a SigmaOS-query pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-query by given configuration
--  - Register a SigmaOS-query by given name
--  - Get SigmaOS-query status and SigmaOS-query availability
--  - Track SigmaOS-query management and SigmaOS-query tracking
+- Manage a SigmaOS-query by given configuration
+- Register a SigmaOS-query by given name
+- Get SigmaOS-query status and SigmaOS-query availability
+- Track SigmaOS-query management and SigmaOS-query tracking
 - Error types for SigmaOS-query failure scenarios or unsupported SigmaOS-query types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-query init, SigmaOS-query management)
 3. **Assert**: Verify the expected SigmaOS-query results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-query initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-query failure scenarios
 - Unit tests provided for SigmaOS-query management and configuration
